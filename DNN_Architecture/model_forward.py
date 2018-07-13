@@ -101,17 +101,5 @@ def compute_cost(AL,Y):
     return cost
 
 
-##################################
-#测试
-from testCases_v2 import *
-def main():
-    X, parameters = L_model_forward_test_case()
-    AL, caches = L_model_forward(X, parameters)
-    print("AL = " + str(AL))
-    print("Length of caches list = " + str(len(caches)))
-            
 
-if __name__ == '__main__':
-    main()
-####################################
         
